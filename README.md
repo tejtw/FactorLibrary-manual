@@ -1,2 +1,2 @@
-# FactorLibray-manual
+# FactorLibrary-manual
 FactorLibray-manual
