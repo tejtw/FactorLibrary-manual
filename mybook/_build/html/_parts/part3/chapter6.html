@@ -61,7 +61,7 @@
     <link rel="icon" href="../../_static/logo.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="1. 節點總覽" href="../part4/chapter1.html" />
+    <link rel="next" title="1. 流程圖節點介紹" href="../part4/chapter1.html" />
     <link rel="prev" title="5. 泛用性分析" href="chapter5.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -203,7 +203,9 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">策略Studio</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../part4/chapter1.html">1. 流程圖節點總覽</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part4/chapter1.html">1. 流程圖節點介紹</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part4/chapter2.html">2. 節點詳細說明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part4/chapter3.html">3. 操作範例</a></li>
 </ul>
 
     </div>
@@ -395,9 +397,8 @@ document.write(`
 <ul class="simple">
 <li><p>若 GRS 檢定的統計量不顯著，代表在特定的假設條件下，模型可以有效解釋所有股票的報酬，並無任何顯著超額報酬；反之，<em><strong>若檢定結果顯著，則意味著存在某些投組無法被模型解釋，顯示該模型的定價能力不足</strong></em>，需要進一步探討或加入其他因子來修正模型。透過這樣的「整體檢定」，研究者可以避免僅憑局部（例如某些股票或投組）出現顯著 alpha 就完全否定模型的可能性，也能更全面地評估模型在解釋市場報酬上的完整度。</p></li>
 <li><p>若GRS 檢定結果與經典的 t 檢定相反，則<em><strong>說明該因子的解釋能力可能是由分組間相關性</strong></em>導致。</p></li>
-<li><p>註：GRS檢定目前僅支援日頻
-<br></p></li>
 </ul>
+<br>
 </section>
 <section id="hj-distance">
 <h2><span class="section-number">6.3. </span>HJ-distance檢定<a class="headerlink" href="#hj-distance" title="Link to this heading">#</a></h2>
@@ -409,7 +410,6 @@ document.write(`
 <ul class="simple">
 <li><p>若 HJ 距離檢定的 p 值顯著，代表該模型存在無法解釋的定價誤差，需要將本次分析的「因子異象」納入模型才能更好地解釋報酬來源。</p></li>
 <li><p>反之，若 p 值不顯著，則顯示現行模型已能良好解釋投資組合的報酬，不需要另外加入新因子。</p></li>
-<li><p>註：HJ-distance檢定目前僅支援日頻</p></li>
 </ul>
 </section>
 </section>
@@ -458,7 +458,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">1. </span>節點總覽</p>
+        <p class="prev-next-title"><span class="section-number">1. </span>流程圖節點介紹</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -495,7 +495,7 @@ document.write(`
   <div class="footer-item">
     
 <p class="component-author">
-By 黃天瑜
+By TEJ量化分析團隊
 </p>
 
   </div>
