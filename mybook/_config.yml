@@ -1,0 +1,12 @@
+# Book settings
+title: "FactorLib 因子分析平台"
+author: "TEJ量化分析團隊"
+logo: _static/logo.png
+language: "zh"
+
+html:
+  favicon: _static/logo.png  
+  navbar_logo: true          
+  toc:
+    use_permalinks: false
+  use_multitoc_numbering: false
