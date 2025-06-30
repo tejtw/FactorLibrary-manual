@@ -6,4 +6,6 @@
 
 3. cmd輸入ghp-import -n -p -f _build/html 部屬新生成的html至github page
 
-4. 其他可參考https://jupyterbook.org/en/stable/start/publish.html
+4. 第3步結束記得將本次變更push上去，否則沒用
+
+5. 其他可參考https://jupyterbook.org/en/stable/start/publish.html
