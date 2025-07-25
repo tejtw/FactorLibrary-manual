@@ -192,7 +192,8 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">因子檢測流程</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../part2/chapter1.html">1. 多因子合成方法</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../part2/chapter2.html">2. 股票池與回測期間參數</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../part2/chapter2.html">3. 股票池與回測期間參數</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">因子檢測分析</span></p>
 <ul class="current nav bd-sidenav">
@@ -379,6 +380,12 @@ document.write(`
 <h2><span class="section-number">4.1. </span>蒙地卡羅預測<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
 <p>使用者可選擇自投組回測完的最後一天起預測未來N天的投組報酬，此處提供常態分布、對數常態分布、重複抽樣與偏態分布等四種分布模型，另外搭配一調整係數，主要用於調整常態分布、對數常態分布模型之標準差倍數，以及偏態分布之偏態係數倍數，供使用者模擬更加波動的未來報酬。</p>
 <p><img alt="alt text" src="../../_images/image-16.png" /></p>
+<ul class="simple">
+<li><p>此處設定統計年化報酬率超過20%比率，在於台股加權報酬指數自2013/01/01以來12年的年化報酬率約為13.38%，故在此基礎上略為調升作為衡量投組未來報酬的門檻值。</p></li>
+<li><p>此處設定統計夏普值超過1.5比率，在於台股加權報酬指數自2013/01/01以來12年的夏普值約為0.86，故在此基礎上略為調升作為衡量投組未來夏普比率的門檻值。</p></li>
+<li><p>此處設定統計年化波動度低於15%比率，在於台股加權報酬指數自2013/01/01以來12年的年化波動度約為16.23%，而一般投資時應追求低於大盤的波動，故作為衡量投組未來波動的門檻值。</p></li>
+<li><p>此處設定統計最大回撤低於-20%比率，在於台股加權報酬指數自2013/01/01以來12年的最大回撤約為-28.55%，而一般投資時應追求低於大盤的回撤幅度，故作為衡量投組未來回撤的門檻值。</p></li>
+</ul>
 <p><img alt="alt text" src="../../_images/image-17.png" /></p>
 <ul>
 <li><p>常態分布模型：使用因子投組回測歷史之日報酬平均值與標準差擬合常態分布進行抽樣模擬，機率密度函式如下：</p>

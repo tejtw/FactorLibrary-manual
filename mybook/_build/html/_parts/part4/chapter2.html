@@ -192,7 +192,8 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">因子檢測流程</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../part2/chapter1.html">1. 多因子合成方法</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../part2/chapter2.html">2. 股票池與回測期間參數</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../part2/chapter2.html">3. 股票池與回測期間參數</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">因子檢測分析</span></p>
 <ul class="nav bd-sidenav">
@@ -375,7 +376,7 @@ document.write(`
 <p>詳述各節點功能、可輸入之參數、可接入之節點與可輸出之節點與所有相關的注意事項。</p>
 <section id="id2">
 <h2><span class="section-number">2.1. </span>資料載入<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<p>流程圖節點的基礎單位，分為最新資料、歷史資料與通用欄位方況等三種，每次回測或表格之產出均需要至少一個資料載入相關的節點在流程圖其中。目前提供之資料表有股價資料、籌碼資料、公司自結數、會計師簽證財務資料與月營收（版本別）</p>
+<p>流程圖節點的基礎單位，分為最新資料、歷史資料與通用欄位方況等三種，每次回測或表格之產出均需要至少一個資料載入相關的節點在流程圖其中。目前提供之資料表有股價資料、籌碼資料、公司自結數、會計師簽證財務資料、月營收（版本別）、因子指標與自製因子。</p>
 <ul>
 <li><p>最新資料</p>
 <div class="toggle docutils container">
@@ -383,7 +384,7 @@ document.write(`
 </div>
 <ul class="simple">
 <li><p>功能：產出指定股票池中所有公司最新一日資料欄位，若該欄位有版本別註記，則產出則會調整為當下時間點所能看到之最新版本資料。</p></li>
-<li><p>參數1：公司自結數、會計師簽證財務資料、股價資料、月營收（版本別）、籌碼資料（日）。</p></li>
+<li><p>參數1：公司自結數、會計師簽證財務資料、股價資料、月營收（版本別）、籌碼資料（日）、因子指標與自製因子。</p></li>
 <li><p>參數2：參數1中所對應的資料欄位名稱，可參考策略Studio右上角之「資料欄位查詢」。</p></li>
 <li><p>上游可連線節點：無。</p></li>
 <li><p>下游可連線節點：比較運算、分組運算與Pipeline產出。</p></li>
@@ -398,10 +399,10 @@ document.write(`
 </div>
 <ul class="simple">
 <li><p>功能：產出指定股票池中所有公司歷史時間點的資料欄位，若該欄位有版本別註記，則產出則會調整為當下時間點所能看到之最新版本資料。</p></li>
-<li><p>參數1：公司自結數、會計師簽證財務資料、股價資料、月營收（版本別）、籌碼資料（日）。</p></li>
+<li><p>參數1：公司自結數、會計師簽證財務資料、股價資料、月營收（版本別）、籌碼資料（日）、因子指標與自製因子。</p></li>
 <li><p>參數2：參數1中所對應的資料欄位名稱，可參考策略Studio右上角之「資料欄位查詢」。</p></li>
 <li><p>參數3：常數值N，作為取過去N日、月或季的依據。</p></li>
-<li><p>參數4：股價籌碼支援N日前；會計與自結數財報支援N日與N季前；月營收支援N日與N月前。</p></li>
+<li><p>參數4：股價籌碼和因子指標與自製因子支援N日前；會計與自結數財報支援N日與N季前；月營收支援N日與N月前。</p></li>
 <li><p>上游可連線節點：無。</p></li>
 <li><p>下游可連線節點：比較運算、邏輯運算、分組運算與Pipeline產出。</p></li>
 </ul>
