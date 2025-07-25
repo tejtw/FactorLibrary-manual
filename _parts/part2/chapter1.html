@@ -63,7 +63,7 @@
     <link rel="icon" href="../../_static/logo.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="2. 股票池與回測期間參數" href="chapter2.html" />
+    <link rel="next" title="3. 股票池與回測期間參數" href="chapter2.html" />
     <link rel="prev" title="4. 策略Studio" href="../part1/chapter4.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -192,7 +192,8 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">因子檢測流程</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">1. 多因子合成方法</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter2.html">2. 股票池與回測期間參數</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="chapter2.html">3. 股票池與回測期間參數</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">因子檢測分析</span></p>
 <ul class="nav bd-sidenav">
@@ -356,11 +357,16 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">1. 多因子合成方法</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#raw-data">1.1. 載入單因子Raw Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1.2. 因子前處理＆合成</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">1.3. 因子分組</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">1.4. 權重分配</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">2. 自製因子</a></li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -479,6 +485,11 @@ document.write(`
 <p>等權重：在每個再平衡日對各個因子分組內的公司給予一致的權重值。</p>
 </section>
 </section>
+<section class="tex2jax_ignore mathjax_ignore" id="id5">
+<h1><span class="section-number">2. </span>自製因子<a class="headerlink" href="#id5" title="Link to this heading">#</a></h1>
+<p>系統將本次使用者執行檢測之因子保存，供後續策略Studio中做使用，但因子值的歷史與使用者設定之檢測歷史長度相同。</p>
+<p>因此當使用者設定近一年檢測此複合因子，則該複合因子在策略Studio中也只有近一年期間的資料可用。</p>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -524,7 +535,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">2. </span>股票池與回測期間參數</p>
+        <p class="prev-next-title"><span class="section-number">3. </span>股票池與回測期間參數</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -544,11 +555,16 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">1. 多因子合成方法</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#raw-data">1.1. 載入單因子Raw Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1.2. 因子前處理＆合成</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">1.3. 因子分組</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">1.4. 權重分配</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">2. 自製因子</a></li>
+</ul>
+
   </nav></div>
 
 </div></div>
